@@ -21,7 +21,9 @@ GameObject:
   - component: {fileID: 4469871894129252}
   - component: {fileID: 212101712830957502}
   - component: {fileID: 61535571997609620}
-  m_Layer: 0
+  - component: {fileID: 114563230120849776}
+  - component: {fileID: 114826647958131396}
+  m_Layer: 9
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,6 +57,31 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
+--- !u!114 &114563230120849776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050163487921956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb73a50d1974ef4a86c682a3406dd4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &114826647958131396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050163487921956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4142cf8cc54ebef4b9301143cb442026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPoint: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!212 &212101712830957502
 SpriteRenderer:
   m_ObjectHideFlags: 1
