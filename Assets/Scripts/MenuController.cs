@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour {
 
     public GameObject audioOnIcon;
     public GameObject audioOffIcon;
+    public Text highScore;
 
 	// Use this for initialization
 	void Start () {
         SetSoundState();
+        highScore.text = PlayerPrefs.GetFloat("HighScore", 0).ToString("0.0");
     }
 	
 	// Update is called once per frame

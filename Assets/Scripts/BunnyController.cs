@@ -84,6 +84,12 @@ public class BunnyController : MonoBehaviour {
             myRigidBody.AddForce(transform.up * bunnyJumpForce);
             myCollider.enabled = false;
             deathSFX.Play();
+            float currentBestScore = PlayerPrefs.GetFloat("HighScore", 0);
+            float currentScore = Time.time - startTime;
+            if(currentScore > currentBestScore)
+            {
+                PlayerPrefs.SetFloat("HighScore", currentScore);
+            }
         }
         else if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
